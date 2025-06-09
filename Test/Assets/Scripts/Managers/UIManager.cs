@@ -30,15 +30,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] Text messageText;
 
-    private void FixedUpdate()
-    {
-        if (messageText.color.a > 0)
-        {
-            messageText.material.color = new Color(messageText.color.r, messageText.color.g, messageText.color.b, messageText.color.a /2);
-            Debug.Log($"{messageText.color.a}");
 
-        }
-    }
 
     public void MainMenuOpen()
     {
